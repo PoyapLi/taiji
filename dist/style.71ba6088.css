@@ -1,0 +1,1 @@
+*{margin:0;padding:0}*,:after,:before{box-sizing:border-box}#demo{word-break:break-all}#div1{position:fixed;left:50%;transform:translateX(-50%);top:20px}#div1:after,#div1:before{position:absolute;content:"";display:block}@media (max-width:500px){#html{overflow:auto;height:50vh}#div1{position:relative;top:0;right:0}#div1Wrapper{height:50vh;top:0;right:0}}
