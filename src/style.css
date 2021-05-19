@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+#demo {
+  word-break: break-all;
+  /* 宽度不够显示时自动换行 */
+}
+#div1 {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+#div1::before {
+  position: absolute;
+  content: "";
+  display: block;
+}
+#div1::after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+@media (max-width: 500px) {
+  #html {
+    overflow: auto;
+    height: 50vh;
+  }
+  #div1 {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  #div1Wrapper {
+    height: 50vh;
+    top: 0;
+    right: 0;
+  }
+}
